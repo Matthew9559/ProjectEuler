@@ -18,6 +18,8 @@ namespace ProjectEuler
 
             if (ConfigurationManager.AppSettings["Problem001"].ParseBoolValue())
                 tests.Add(new Problem001() as IRunEuler);
+            if (ConfigurationManager.AppSettings["Problem002"].ParseBoolValue())
+                tests.Add(new Problem002() as IRunEuler);
 
             //Check for Problems to run and display each's answer
             if (tests != null && tests.Count > 0)
